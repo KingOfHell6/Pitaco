@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C10942329FF198C0098BE57 /* GrayBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C10942229FF198C0098BE57 /* GrayBlueButton.swift */; };
+		3C10942529FF1BD00098BE57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C10942429FF1BD00098BE57 /* GoogleService-Info.plist */; };
 		3C8B7F7229FF105A008D49EE /* PitacoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B7F7129FF105A008D49EE /* PitacoApp.swift */; };
 		3C8B7F7429FF105A008D49EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B7F7329FF105A008D49EE /* ContentView.swift */; };
 		3C8B7F7629FF105B008D49EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C8B7F7529FF105B008D49EE /* Assets.xcassets */; };
 		3C8B7F7929FF105B008D49EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C8B7F7829FF105B008D49EE /* Preview Assets.xcassets */; };
+		3C8B7F8429FF10CE008D49EE /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B7F8329FF10CE008D49EE /* WelcomeView.swift */; };
+		3C8B7F8629FF10DA008D49EE /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B7F8529FF10DA008D49EE /* WelcomeViewModel.swift */; };
+		3C8B7F8C29FF1259008D49EE /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8B7F8B29FF1259008D49EE /* FirebaseAnalyticsSwift */; };
+		3C8B7F8E29FF1259008D49EE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8B7F8D29FF1259008D49EE /* FirebaseAuth */; };
+		3C8B7F9029FF1259008D49EE /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8B7F8F29FF1259008D49EE /* FirebaseDatabase */; };
+		3C8B7F9229FF1259008D49EE /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8B7F9129FF1259008D49EE /* FirebaseDatabaseSwift */; };
+		3C8B7F9429FF1259008D49EE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8B7F9329FF1259008D49EE /* FirebaseFirestore */; };
+		3C8B7F9629FF1259008D49EE /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8B7F9529FF1259008D49EE /* FirebaseFirestoreSwift */; };
+		3C8B7F9829FF1259008D49EE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8B7F9729FF1259008D49EE /* FirebaseStorage */; };
+		3C8B7F9D29FF1600008D49EE /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B7F9C29FF1600008D49EE /* BlueButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C10942229FF198C0098BE57 /* GrayBlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayBlueButton.swift; sourceTree = "<group>"; };
+		3C10942429FF1BD00098BE57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3C10942629FF1FCC0098BE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3C8B7F6E29FF105A008D49EE /* Pitaco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pitaco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8B7F7129FF105A008D49EE /* PitacoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitacoApp.swift; sourceTree = "<group>"; };
 		3C8B7F7329FF105A008D49EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3C8B7F7529FF105B008D49EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C8B7F7829FF105B008D49EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C8B7F8329FF10CE008D49EE /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		3C8B7F8529FF10DA008D49EE /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		3C8B7F9C29FF1600008D49EE /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +44,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8B7F9229FF1259008D49EE /* FirebaseDatabaseSwift in Frameworks */,
+				3C8B7F9029FF1259008D49EE /* FirebaseDatabase in Frameworks */,
+				3C8B7F8C29FF1259008D49EE /* FirebaseAnalyticsSwift in Frameworks */,
+				3C8B7F9429FF1259008D49EE /* FirebaseFirestore in Frameworks */,
+				3C8B7F9829FF1259008D49EE /* FirebaseStorage in Frameworks */,
+				3C8B7F8E29FF1259008D49EE /* FirebaseAuth in Frameworks */,
+				3C8B7F9629FF1259008D49EE /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C10942129FF18050098BE57 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3C8B7F6529FF105A008D49EE = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +83,13 @@
 		3C8B7F7029FF105A008D49EE /* Pitaco */ = {
 			isa = PBXGroup;
 			children = (
-				3C8B7F7129FF105A008D49EE /* PitacoApp.swift */,
-				3C8B7F7329FF105A008D49EE /* ContentView.swift */,
+				3C10942629FF1FCC0098BE57 /* Info.plist */,
 				3C8B7F7529FF105B008D49EE /* Assets.xcassets */,
+				3C8B7F9A29FF15E7008D49EE /* Components */,
+				3C10942129FF18050098BE57 /* Extensions */,
+				3C8B7F7F29FF1094008D49EE /* Features */,
+				3C10942429FF1BD00098BE57 /* GoogleService-Info.plist */,
+				3C8B7F7129FF105A008D49EE /* PitacoApp.swift */,
 				3C8B7F7729FF105B008D49EE /* Preview Content */,
 			);
 			path = Pitaco;
@@ -67,6 +103,81 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3C8B7F7F29FF1094008D49EE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3C8B7F8929FF113A008D49EE /* Aplication */,
+				3C8B7F8729FF1106008D49EE /* Authentication */,
+				3C8B7F8029FF109D008D49EE /* Welcome */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3C8B7F8029FF109D008D49EE /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				3C8B7F8129FF10A8008D49EE /* View */,
+				3C8B7F8229FF10AF008D49EE /* Viewmodel */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		3C8B7F8129FF10A8008D49EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C8B7F8329FF10CE008D49EE /* WelcomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C8B7F8229FF10AF008D49EE /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				3C8B7F8529FF10DA008D49EE /* WelcomeViewModel.swift */,
+			);
+			path = Viewmodel;
+			sourceTree = "<group>";
+		};
+		3C8B7F8729FF1106008D49EE /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				3C8B7F8829FF1118008D49EE /* Service */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		3C8B7F8829FF1118008D49EE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3C8B7F8929FF113A008D49EE /* Aplication */ = {
+			isa = PBXGroup;
+			children = (
+				3C8B7F7329FF105A008D49EE /* ContentView.swift */,
+			);
+			path = Aplication;
+			sourceTree = "<group>";
+		};
+		3C8B7F9A29FF15E7008D49EE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3C8B7F9B29FF15ED008D49EE /* Buttons */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3C8B7F9B29FF15ED008D49EE /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3C8B7F9C29FF1600008D49EE /* BlueButton.swift */,
+				3C10942229FF198C0098BE57 /* GrayBlueButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,12 +188,22 @@
 				3C8B7F6A29FF105A008D49EE /* Sources */,
 				3C8B7F6B29FF105A008D49EE /* Frameworks */,
 				3C8B7F6C29FF105A008D49EE /* Resources */,
+				3C8B7F9929FF1363008D49EE /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Pitaco;
+			packageProductDependencies = (
+				3C8B7F8B29FF1259008D49EE /* FirebaseAnalyticsSwift */,
+				3C8B7F8D29FF1259008D49EE /* FirebaseAuth */,
+				3C8B7F8F29FF1259008D49EE /* FirebaseDatabase */,
+				3C8B7F9129FF1259008D49EE /* FirebaseDatabaseSwift */,
+				3C8B7F9329FF1259008D49EE /* FirebaseFirestore */,
+				3C8B7F9529FF1259008D49EE /* FirebaseFirestoreSwift */,
+				3C8B7F9729FF1259008D49EE /* FirebaseStorage */,
+			);
 			productName = Pitaco;
 			productReference = 3C8B7F6E29FF105A008D49EE /* Pitaco.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +232,9 @@
 				Base,
 			);
 			mainGroup = 3C8B7F6529FF105A008D49EE;
+			packageReferences = (
+				3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 3C8B7F6F29FF105A008D49EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,10 +251,31 @@
 			files = (
 				3C8B7F7929FF105B008D49EE /* Preview Assets.xcassets in Resources */,
 				3C8B7F7629FF105B008D49EE /* Assets.xcassets in Resources */,
+				3C10942529FF1BD00098BE57 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C8B7F9929FF1363008D49EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# MARK: SwiftLint\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n# MARK: SwiftLint\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C8B7F6A29FF105A008D49EE /* Sources */ = {
@@ -138,6 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C8B7F7429FF105A008D49EE /* ContentView.swift in Sources */,
+				3C8B7F9D29FF1600008D49EE /* BlueButton.swift in Sources */,
+				3C10942329FF198C0098BE57 /* GrayBlueButton.swift in Sources */,
+				3C8B7F8629FF10DA008D49EE /* WelcomeViewModel.swift in Sources */,
+				3C8B7F8429FF10CE008D49EE /* WelcomeView.swift in Sources */,
 				3C8B7F7229FF105A008D49EE /* PitacoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +419,7 @@
 				DEVELOPMENT_TEAM = HF6TW3P84V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pitaco/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +449,7 @@
 				DEVELOPMENT_TEAM = HF6TW3P84V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pitaco/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +490,55 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3C8B7F8B29FF1259008D49EE /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		3C8B7F8D29FF1259008D49EE /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3C8B7F8F29FF1259008D49EE /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		3C8B7F9129FF1259008D49EE /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		3C8B7F9329FF1259008D49EE /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3C8B7F9529FF1259008D49EE /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		3C8B7F9729FF1259008D49EE /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3C8B7F6629FF105A008D49EE /* Project object */;
 }
