@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "swift:spm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
