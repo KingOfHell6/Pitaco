@@ -15,4 +15,6 @@ O aplicativo oferece aos usuários uma plataforma onde eles podem explorar novos
 
 2. Navegue até a pasta do projeto e abra o arquivo `Pitaco.xcodeproj` no Xcode.
 
-3. Certifique-se de que o dispositivo-alvo esteja selecionado e clique no botão "Run" (▶️) para executar o aplicativo no simulador ou no dispositivo iOS.
+3. Adicione o SDK do Firebase ao projeto. Siga as instruções na documentação oficial do Firebase para configurar corretamente o Firebase no aplicativo.
+
+4. Certifique-se de que o dispositivo-alvo esteja selecionado e clique no botão "Run" (▶️) para executar o aplicativo no simulador ou no dispositivo iOS.
