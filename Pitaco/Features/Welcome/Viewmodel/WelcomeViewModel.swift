@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class WelcomeViewModel: ObservableObject {
+    @Published var isShowingSignIn: Bool
+
+    init() {
+        self.isShowingSignIn = false
+    }
+}

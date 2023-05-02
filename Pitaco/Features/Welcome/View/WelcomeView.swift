@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    @StateObject private var welcomeVM = WelcomeViewModel()
+
     var body: some View {
         VStack(spacing: 12) {
             Spacer()
@@ -21,7 +23,7 @@ struct WelcomeView: View {
                 .lineLimit(1)
                 .frame(maxWidth: .infinity, alignment: .leading)
 
-            Text("O Pitaco é o aplicativo perfeito para todos os amantes de filmes e séries. Aqui, você pode explorar as últimas tendências, descobrir novos títulos e guardar suas opiniões.")
+            Text("O Pitaco é o aplicativo perfeito para todos os amantes de filmes e séries. Aqui, você pode explorar as últimas tendências, descobrir novos títulos e registrar seus pitacos")
                 .font(.system(size: 15, weight: .bold))
                 .multilineTextAlignment(.leading)
 
@@ -30,13 +32,22 @@ struct WelcomeView: View {
 
             BlueButton(action: {
                 //
-            }, text: "Criar uma conta")
+            }, label: "Criar uma conta")
 
             GrayBlueButton(action: {
-                //
-            }, text: "Fazer login")
+                welcomeVM.isShowingSignIn.toggle()
+            }, label: "Fazer login")
         }
         .padding(.horizontal, 20)
+        .sheet(isPresented: $welcomeVM.isShowingSignIn) {
+            NavigationStack {
+                SignInView()
+                    .navigationTitle("Fazer login")
+                    .navigationBarTitleDisplayMode(.inline)
+            }
+            .presentationDetents([.medium])
+            .presentationCornerRadius(15)
+        }
     }
 }
 

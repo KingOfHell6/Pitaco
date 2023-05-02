@@ -1,13 +1,13 @@
 //
-//  BlueButton.swift
+//  OffBoxButton.swift
 //  Pitaco
 //
-//  Created by Matheus Araújo on 30/04/23.
+//  Created by Matheus Araújo on 01/05/23.
 //
 
 import SwiftUI
 
-struct BlueButton: View {
+struct OffBoxButton: View {
     var action : () -> Void
     var label: String
 
@@ -18,21 +18,21 @@ struct BlueButton: View {
             } label: {
                 Text(label)
                     .frame(maxWidth: .infinity, maxHeight: 50)
-                    .foregroundColor(.white)
+                    .foregroundColor(.blue)
                     .font(.system(size: 17, weight: .bold))
-                    .background(Color("BlueButton"))
+                    .background(.clear)
                     .cornerRadius(15)
             }
         }
     }
 }
 
-struct BlueButton_Previews: PreviewProvider {
+struct OffBoxButton_Previews: PreviewProvider {
     static func algo() {
         //
     }
     static var previews: some View {
-        BlueButton(action: algo, label: "Botão azul")
+        OffBoxButton(action: algo, label: "Botão sem cor de fundo")
             .padding(.horizontal, 20)
     }
 }

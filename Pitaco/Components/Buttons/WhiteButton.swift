@@ -1,13 +1,13 @@
 //
-//  BlueButton.swift
+//  WhiteButton.swift
 //  Pitaco
 //
-//  Created by Matheus Araújo on 30/04/23.
+//  Created by Matheus Araújo on 01/05/23.
 //
 
 import SwiftUI
 
-struct BlueButton: View {
+struct WhiteButton: View {
     var action : () -> Void
     var label: String
 
@@ -18,21 +18,21 @@ struct BlueButton: View {
             } label: {
                 Text(label)
                     .frame(maxWidth: .infinity, maxHeight: 50)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .font(.system(size: 17, weight: .bold))
-                    .background(Color("BlueButton"))
+                    .background(Color("WhiteButton"))
                     .cornerRadius(15)
             }
         }
     }
 }
 
-struct BlueButton_Previews: PreviewProvider {
+struct WhiteButton_Previews: PreviewProvider {
     static func algo() {
         //
     }
     static var previews: some View {
-        BlueButton(action: algo, label: "Botão azul")
+        WhiteButton(action: algo, label: "Botão branco")
             .padding(.horizontal, 20)
     }
 }

@@ -9,26 +9,33 @@
 /* Begin PBXBuildFile section */
 		3C10942329FF198C0098BE57 /* GrayBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C10942229FF198C0098BE57 /* GrayBlueButton.swift */; };
 		3C10942529FF1BD00098BE57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C10942429FF1BD00098BE57 /* GoogleService-Info.plist */; };
+		3C48A9D42A0027E8000995A7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3C48A9D32A0027E8000995A7 /* FirebaseAuth */; };
+		3C48A9D62A0027E8000995A7 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 3C48A9D52A0027E8000995A7 /* FirebasePerformance */; };
+		3C48A9D72A0028CE000995A7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C10942D2A0024370098BE57 /* AdSupport.framework */; };
+		3C48A9DC2A002DB4000995A7 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48A9DB2A002DB4000995A7 /* SignInView.swift */; };
+		3C48A9DE2A002DF6000995A7 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48A9DD2A002DF6000995A7 /* SignInViewModel.swift */; };
+		3C48A9E02A002FA8000995A7 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48A9DF2A002FA8000995A7 /* WhiteButton.swift */; };
+		3C48A9E22A003934000995A7 /* GrayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C48A9E12A003934000995A7 /* GrayButton.swift */; };
 		3C8B7F7229FF105A008D49EE /* PitacoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B7F7129FF105A008D49EE /* PitacoApp.swift */; };
 		3C8B7F7429FF105A008D49EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B7F7329FF105A008D49EE /* ContentView.swift */; };
 		3C8B7F7629FF105B008D49EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C8B7F7529FF105B008D49EE /* Assets.xcassets */; };
 		3C8B7F7929FF105B008D49EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C8B7F7829FF105B008D49EE /* Preview Assets.xcassets */; };
 		3C8B7F8429FF10CE008D49EE /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B7F8329FF10CE008D49EE /* WelcomeView.swift */; };
 		3C8B7F8629FF10DA008D49EE /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B7F8529FF10DA008D49EE /* WelcomeViewModel.swift */; };
-		3C8B7F8C29FF1259008D49EE /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8B7F8B29FF1259008D49EE /* FirebaseAnalyticsSwift */; };
-		3C8B7F8E29FF1259008D49EE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8B7F8D29FF1259008D49EE /* FirebaseAuth */; };
-		3C8B7F9029FF1259008D49EE /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8B7F8F29FF1259008D49EE /* FirebaseDatabase */; };
-		3C8B7F9229FF1259008D49EE /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8B7F9129FF1259008D49EE /* FirebaseDatabaseSwift */; };
-		3C8B7F9429FF1259008D49EE /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8B7F9329FF1259008D49EE /* FirebaseFirestore */; };
-		3C8B7F9629FF1259008D49EE /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8B7F9529FF1259008D49EE /* FirebaseFirestoreSwift */; };
-		3C8B7F9829FF1259008D49EE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3C8B7F9729FF1259008D49EE /* FirebaseStorage */; };
 		3C8B7F9D29FF1600008D49EE /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B7F9C29FF1600008D49EE /* BlueButton.swift */; };
+		3CA2C5F82A003C6F001A9CAB /* OffBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2C5F72A003C6F001A9CAB /* OffBoxButton.swift */; };
+		3CA2C5FA2A006F20001A9CAB /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2C5F92A006F20001A9CAB /* FirebaseService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C10942229FF198C0098BE57 /* GrayBlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayBlueButton.swift; sourceTree = "<group>"; };
 		3C10942429FF1BD00098BE57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3C10942629FF1FCC0098BE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3C10942D2A0024370098BE57 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		3C48A9DB2A002DB4000995A7 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		3C48A9DD2A002DF6000995A7 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		3C48A9DF2A002FA8000995A7 /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
+		3C48A9E12A003934000995A7 /* GrayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayButton.swift; sourceTree = "<group>"; };
 		3C8B7F6E29FF105A008D49EE /* Pitaco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pitaco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C8B7F7129FF105A008D49EE /* PitacoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitacoApp.swift; sourceTree = "<group>"; };
 		3C8B7F7329FF105A008D49EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +44,8 @@
 		3C8B7F8329FF10CE008D49EE /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		3C8B7F8529FF10DA008D49EE /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		3C8B7F9C29FF1600008D49EE /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
+		3CA2C5F72A003C6F001A9CAB /* OffBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffBoxButton.swift; sourceTree = "<group>"; };
+		3CA2C5F92A006F20001A9CAB /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,13 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C8B7F9229FF1259008D49EE /* FirebaseDatabaseSwift in Frameworks */,
-				3C8B7F9029FF1259008D49EE /* FirebaseDatabase in Frameworks */,
-				3C8B7F8C29FF1259008D49EE /* FirebaseAnalyticsSwift in Frameworks */,
-				3C8B7F9429FF1259008D49EE /* FirebaseFirestore in Frameworks */,
-				3C8B7F9829FF1259008D49EE /* FirebaseStorage in Frameworks */,
-				3C8B7F8E29FF1259008D49EE /* FirebaseAuth in Frameworks */,
-				3C8B7F9629FF1259008D49EE /* FirebaseFirestoreSwift in Frameworks */,
+				3C48A9D62A0027E8000995A7 /* FirebasePerformance in Frameworks */,
+				3C48A9D42A0027E8000995A7 /* FirebaseAuth in Frameworks */,
+				3C48A9D72A0028CE000995A7 /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,11 +69,45 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		3C10942A2A0020AD0098BE57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C10942D2A0024370098BE57 /* AdSupport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C48A9D82A002D77000995A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C48A9DB2A002DB4000995A7 /* SignInView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C48A9D92A002D7C000995A7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3C48A9DD2A002DF6000995A7 /* SignInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3C48A9DA2A002DA1000995A7 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				3C48A9D82A002D77000995A7 /* View */,
+				3C48A9D92A002D7C000995A7 /* ViewModel */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
 		3C8B7F6529FF105A008D49EE = {
 			isa = PBXGroup;
 			children = (
 				3C8B7F7029FF105A008D49EE /* Pitaco */,
 				3C8B7F6F29FF105A008D49EE /* Products */,
+				3C10942A2A0020AD0098BE57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,12 +122,12 @@
 		3C8B7F7029FF105A008D49EE /* Pitaco */ = {
 			isa = PBXGroup;
 			children = (
-				3C10942629FF1FCC0098BE57 /* Info.plist */,
 				3C8B7F7529FF105B008D49EE /* Assets.xcassets */,
 				3C8B7F9A29FF15E7008D49EE /* Components */,
 				3C10942129FF18050098BE57 /* Extensions */,
 				3C8B7F7F29FF1094008D49EE /* Features */,
 				3C10942429FF1BD00098BE57 /* GoogleService-Info.plist */,
+				3C10942629FF1FCC0098BE57 /* Info.plist */,
 				3C8B7F7129FF105A008D49EE /* PitacoApp.swift */,
 				3C8B7F7729FF105B008D49EE /* Preview Content */,
 			);
@@ -141,6 +180,7 @@
 		3C8B7F8729FF1106008D49EE /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				3C48A9DA2A002DA1000995A7 /* SignIn */,
 				3C8B7F8829FF1118008D49EE /* Service */,
 			);
 			path = Authentication;
@@ -149,6 +189,7 @@
 		3C8B7F8829FF1118008D49EE /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				3CA2C5F92A006F20001A9CAB /* FirebaseService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -174,6 +215,9 @@
 			children = (
 				3C8B7F9C29FF1600008D49EE /* BlueButton.swift */,
 				3C10942229FF198C0098BE57 /* GrayBlueButton.swift */,
+				3C48A9E12A003934000995A7 /* GrayButton.swift */,
+				3C48A9DF2A002FA8000995A7 /* WhiteButton.swift */,
+				3CA2C5F72A003C6F001A9CAB /* OffBoxButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -196,13 +240,8 @@
 			);
 			name = Pitaco;
 			packageProductDependencies = (
-				3C8B7F8B29FF1259008D49EE /* FirebaseAnalyticsSwift */,
-				3C8B7F8D29FF1259008D49EE /* FirebaseAuth */,
-				3C8B7F8F29FF1259008D49EE /* FirebaseDatabase */,
-				3C8B7F9129FF1259008D49EE /* FirebaseDatabaseSwift */,
-				3C8B7F9329FF1259008D49EE /* FirebaseFirestore */,
-				3C8B7F9529FF1259008D49EE /* FirebaseFirestoreSwift */,
-				3C8B7F9729FF1259008D49EE /* FirebaseStorage */,
+				3C48A9D32A0027E8000995A7 /* FirebaseAuth */,
+				3C48A9D52A0027E8000995A7 /* FirebasePerformance */,
 			);
 			productName = Pitaco;
 			productReference = 3C8B7F6E29FF105A008D49EE /* Pitaco.app */;
@@ -225,15 +264,15 @@
 			};
 			buildConfigurationList = 3C8B7F6929FF105A008D49EE /* Build configuration list for PBXProject "Pitaco" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = "pt-BR";
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 3C8B7F6529FF105A008D49EE;
 			packageReferences = (
-				3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3C48A9D22A0027E8000995A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 3C8B7F6F29FF105A008D49EE /* Products */;
 			projectDirPath = "";
@@ -283,10 +322,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C8B7F7429FF105A008D49EE /* ContentView.swift in Sources */,
+				3C48A9DC2A002DB4000995A7 /* SignInView.swift in Sources */,
 				3C8B7F9D29FF1600008D49EE /* BlueButton.swift in Sources */,
 				3C10942329FF198C0098BE57 /* GrayBlueButton.swift in Sources */,
+				3C48A9DE2A002DF6000995A7 /* SignInViewModel.swift in Sources */,
 				3C8B7F8629FF10DA008D49EE /* WelcomeViewModel.swift in Sources */,
 				3C8B7F8429FF10CE008D49EE /* WelcomeView.swift in Sources */,
+				3C48A9E02A002FA8000995A7 /* WhiteButton.swift in Sources */,
+				3C48A9E22A003934000995A7 /* GrayButton.swift in Sources */,
+				3CA2C5F82A003C6F001A9CAB /* OffBoxButton.swift in Sources */,
+				3CA2C5FA2A006F20001A9CAB /* FirebaseService.swift in Sources */,
 				3C8B7F7229FF105A008D49EE /* PitacoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,11 +465,12 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pitaco/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,9 +478,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.kofh.Pitaco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,11 +499,12 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pitaco/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,9 +512,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.kofh.Pitaco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -492,51 +545,26 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		3C48A9D22A0027E8000995A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.9.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3C8B7F8B29FF1259008D49EE /* FirebaseAnalyticsSwift */ = {
+		3C48A9D32A0027E8000995A7 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalyticsSwift;
-		};
-		3C8B7F8D29FF1259008D49EE /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 3C48A9D22A0027E8000995A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
-		3C8B7F8F29FF1259008D49EE /* FirebaseDatabase */ = {
+		3C48A9D52A0027E8000995A7 /* FirebasePerformance */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		3C8B7F9129FF1259008D49EE /* FirebaseDatabaseSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabaseSwift;
-		};
-		3C8B7F9329FF1259008D49EE /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		3C8B7F9529FF1259008D49EE /* FirebaseFirestoreSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestoreSwift;
-		};
-		3C8B7F9729FF1259008D49EE /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3C8B7F8A29FF1259008D49EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
+			package = 3C48A9D22A0027E8000995A7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

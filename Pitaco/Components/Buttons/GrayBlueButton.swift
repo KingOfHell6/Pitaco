@@ -9,14 +9,14 @@ import SwiftUI
 
 struct GrayBlueButton: View {
     var action : () -> Void
-    var text: String
+    var label: String
 
     var body: some View {
         VStack {
             Button {
                 action()
             } label: {
-                Text(text)
+                Text(label)
                     .frame(maxWidth: .infinity, maxHeight: 50)
                     .foregroundColor(.blue)
                     .font(.system(size: 17, weight: .bold))
@@ -32,6 +32,7 @@ struct GrayBlueButton_Previews: PreviewProvider {
         //
     }
     static var previews: some View {
-        GrayBlueButton(action: algo, text: "Botão cinza azulado")
+        GrayBlueButton(action: algo, label: "Botão cinza azulado")
+            .padding(.horizontal, 20)
     }
 }
