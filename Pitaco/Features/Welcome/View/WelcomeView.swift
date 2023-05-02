@@ -45,7 +45,7 @@ struct WelcomeView: View {
                     .navigationTitle("Fazer login")
                     .navigationBarTitleDisplayMode(.inline)
             }
-            .presentationDetents([.medium])
+            .presentationDragIndicator(.visible)
             .presentationCornerRadius(15)
         }
     }
