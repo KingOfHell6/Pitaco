@@ -9,8 +9,10 @@ import Foundation
 
 class WelcomeViewModel: ObservableObject {
     @Published var isShowingSignIn: Bool
+    @Published var isShowingSignUp: Bool
 
     init() {
         self.isShowingSignIn = false
+        self.isShowingSignUp = false
     }
 }

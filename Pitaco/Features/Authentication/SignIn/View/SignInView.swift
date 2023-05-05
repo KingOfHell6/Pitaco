@@ -20,7 +20,7 @@ struct SignInView: View {
             SecureTextField(text: $signInVM.password, isShowingPassword: $signInVM.isShowingPassword, title: "Senha")
 
             Text(authService.error?.localizedDescription ?? "")
-                .frame(maxWidth: .infinity, maxHeight: 80, alignment: .center)
+                .frame(maxWidth: .infinity, minHeight: 40, maxHeight: 80, alignment: .center)
                 .padding(.horizontal, 47)
                 .multilineTextAlignment(.center)
                 .foregroundColor(.red)

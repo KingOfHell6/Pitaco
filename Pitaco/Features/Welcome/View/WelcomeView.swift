@@ -31,7 +31,7 @@ struct WelcomeView: View {
                 .frame(maxHeight: 17)
 
             BlueButton(action: {
-                //
+                welcomeVM.isShowingSignUp.toggle()
             }, label: "Criar uma conta")
 
             GrayBlueButton(action: {
@@ -43,6 +43,15 @@ struct WelcomeView: View {
             NavigationStack {
                 SignInView()
                     .navigationTitle("Fazer login")
+                    .navigationBarTitleDisplayMode(.inline)
+            }
+            .presentationDragIndicator(.visible)
+            .presentationCornerRadius(15)
+        }
+        .sheet(isPresented: $welcomeVM.isShowingSignUp) {
+            NavigationStack {
+                SignUpView()
+                    .navigationTitle("Criar conta")
                     .navigationBarTitleDisplayMode(.inline)
             }
             .presentationDragIndicator(.visible)

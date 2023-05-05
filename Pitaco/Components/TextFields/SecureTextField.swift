@@ -21,22 +21,22 @@ struct SecureTextField: View {
                 .foregroundColor(Color("TextFieldLabel"))
             
             ZStack {
-                HStack {
-                    if isShowingPassword {
-                        TextField("", text: $text)
-                            .padding(.horizontal, 18)
-                            .textContentType(.emailAddress)
-                            .textInputAutocapitalization(.never)
-                            .autocorrectionDisabled()
-                            .keyboardType(.emailAddress)
-                    } else {
-                        SecureField("", text: $text)
-                            .padding(.horizontal, 18)
-                            .textContentType(.emailAddress)
-                            .textInputAutocapitalization(.never)
-                            .autocorrectionDisabled()
-                            .keyboardType(.emailAddress)
-                    }
+                ZStack {
+                    TextField("", text: $text)
+                        .padding(.horizontal, 18)
+                        .textContentType(.emailAddress)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled()
+                        .keyboardType(.emailAddress)
+                        .opacity(isShowingPassword ? 1 : 0)
+
+                    SecureField("", text: $text)
+                        .padding(.horizontal, 18)
+                        .textContentType(.emailAddress)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled()
+                        .keyboardType(.emailAddress)
+                        .opacity(isShowingPassword ? 0 : 1)
                 }
                 .frame(maxWidth: .infinity, maxHeight: 50)
                 .background(Color("TextField"))

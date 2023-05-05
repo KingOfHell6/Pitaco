@@ -19,11 +19,15 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct YourApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-
+    @ObservedObject private var firebase = FirebaseAuthService.shared
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                if firebase.user == nil {
+                    WelcomeView()
+                } else {
+                    HomeView()
+                }
             }
         }
     }
