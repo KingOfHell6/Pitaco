@@ -48,7 +48,7 @@ class ProfilePhotoViewModel: ObservableObject {
         return selectedImage.loadTransferable(type: ProfileImage.self) { result in
             DispatchQueue.main.async {
                 guard selectedImage == self.selectedImage else {
-                    print("Failed to get the selected image.")
+                    print("Falha ao carregar a imagem selecionada")
                     return
                 }
 

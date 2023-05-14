@@ -1,25 +1,26 @@
 //
-//  SecureTextField.swift
+//  SecureConfirmationTextField.swift
 //  Pitaco
 //
-//  Created by Matheus Araújo on 02/05/23.
+//  Created by Matheus Araújo on 07/05/23.
 //
 
 import SwiftUI
 
-struct SecureTextField: View {
+struct SecureConfirmationTextField: View {
     @Binding var text: String
     @Binding var isShowingPassword: Bool
-    var title: String
-    
+    @Binding var isPasswordsEquals: Bool
+    var isPasswordEmpty: Bool
+
     var body: some View {
         VStack {
-            Text(title)
+            Text("Confirme sua senha")
                 .frame(maxWidth: .infinity, maxHeight: 22, alignment: .leading)
                 .offset(x: +18)
                 .font(.system(size: 17, weight: .bold))
                 .foregroundColor(Color("TextFieldLabel"))
-            
+
             ZStack {
                 ZStack {
                     TextField("", text: $text)
@@ -27,7 +28,7 @@ struct SecureTextField: View {
                         .textContentType(.password)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled()
-                        .keyboardType(.emailAddress)
+                        .keyboardType(.default)
                         .opacity(isShowingPassword ? 1 : 0)
 
                     SecureField("", text: $text)
@@ -35,24 +36,22 @@ struct SecureTextField: View {
                         .textContentType(.password)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled()
-                        .keyboardType(.emailAddress)
+                        .keyboardType(.default)
                         .opacity(isShowingPassword ? 0 : 1)
                 }
                 .frame(maxWidth: .infinity, minHeight: 50)
                 .background(Color("TextField"))
                 .cornerRadius(15)
 
-                VStack {
-                    Button {
-                        self.isShowingPassword.toggle()
-                    } label: {
-                        Image(systemName: isShowingPassword ? "eye.fill" : "eye.slash.fill")
+                if !isPasswordEmpty {
+                    VStack {
+                        Image(systemName: isPasswordsEquals ? "equal.circle.fill" : "wrongwaysign.fill")
                             .symbolRenderingMode(.multicolor)
-                            .foregroundColor(.gray)
+                            .padding(.trailing, 20)
+                            .foregroundColor(isPasswordsEquals ? .green : .red)
                     }
-                    .padding(.trailing, 20)
+                    .frame(maxWidth: .infinity ,alignment: .trailing)
                 }
-                .frame(maxWidth: .infinity ,alignment: .trailing)
             }
         }
     }

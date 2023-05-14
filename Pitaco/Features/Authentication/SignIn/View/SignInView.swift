@@ -9,8 +9,9 @@ import SwiftUI
 import AuthenticationServices
 
 struct SignInView: View {
-    @StateObject private var signInVM = SignInViewModel()
-    @StateObject private var authService = FirebaseAuthService.shared
+    @ObservedObject private var signInVM = SignInViewModel()
+    @ObservedObject private var authService = FirebaseAuthService.shared
+    @Environment (\.presentationMode) var presentationMode
     var isShowingInsideSignUpView: Bool = false
 
     var body: some View {
@@ -32,9 +33,21 @@ struct SignInView: View {
                 authService.signIn(with: signInVM.email, and: signInVM.password)
             }, label: "Fazer login com e-mail")
 
-            OffBoxButton(action: {
-                //
-            }, label: "Ainda não tem uma conta?")
+            if isShowingInsideSignUpView {
+                OffBoxButton(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }, label: "Ainda não tem uma conta?")
+            } else {
+                NavigationLink {
+                    SignUpView(isShowingInsideSignInView: true)
+                        .navigationTitle("Criar conta")
+                } label: {
+                    Text("Ainda não tem uma conta?")
+                        .foregroundColor(.blue)
+                        .font(.system(size: 17, weight: .bold))
+                }
+
+            }
         }
         .padding(.horizontal, 20)
     }

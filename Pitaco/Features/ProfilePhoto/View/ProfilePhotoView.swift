@@ -16,24 +16,20 @@ struct ProfilePhotoView: View {
     }
 }
 
-struct ProfileImage: View {
+struct EditableCircularProfileImage: View {
     @StateObject var profilePhotoVM: ProfilePhotoViewModel
 
     var body: some View {
-        switch profilePhotoVM.imageState {
-            case .success(let image):
-                image.resizable()
-            case .loading:
-                ProgressView()
-            case .empty:
-                Image(systemName: "person.fill")
-                    .font(.system(size: 40))
-                    .foregroundColor(.white)
-            case .failure:
-                Image(systemName: "exclamationmark.triangle.fill")
-                    .font(.system(size: 40))
-                    .foregroundColor(.white)
-        }
+        CircularProfileImage(profilePhotoVM: profilePhotoVM)
+            .overlay(alignment: .bottomTrailing) {
+                PhotosPicker(selection: $profilePhotoVM.selectedImage, matching: .images) {
+                    Image(systemName: "pencil.circle.fill")
+                        .symbolRenderingMode(.multicolor)
+                        .font(.system(size: 30))
+                        .foregroundColor(.accentColor)
+                }
+                .buttonStyle(.borderless)
+            }
     }
 }
 
@@ -57,23 +53,26 @@ struct CircularProfileImage: View {
     }
 }
 
-struct EditableCircularProfileImage: View {
+struct ProfileImage: View {
     @StateObject var profilePhotoVM: ProfilePhotoViewModel
 
     var body: some View {
-        CircularProfileImage(profilePhotoVM: profilePhotoVM)
-            .overlay(alignment: .bottomTrailing) {
-                PhotosPicker(selection: $profilePhotoVM.selectedImage, matching: .images) {
-                    Image(systemName: "pencil.circle.fill")
-                        .symbolRenderingMode(.multicolor)
-                        .font(.system(size: 30))
-                        .foregroundColor(.accentColor)
-                }
-                .buttonStyle(.borderless)
-            }
+        switch profilePhotoVM.imageState {
+            case .success(let image):
+                image.resizable()
+            case .loading:
+                ProgressView()
+            case .empty:
+                Image(systemName: "person.fill")
+                    .font(.system(size: 40))
+                    .foregroundColor(.white)
+            case .failure:
+                Image(systemName: "exclamationmark.triangle.fill")
+                    .font(.system(size: 40))
+                    .foregroundColor(.white)
+        }
     }
 }
-
 
 struct MyPreviewProvider_Previews: PreviewProvider {
     static var previews: some View {

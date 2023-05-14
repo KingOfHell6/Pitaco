@@ -41,7 +41,7 @@ struct WelcomeView: View {
         .padding(.horizontal, 20)
         .sheet(isPresented: $welcomeVM.isShowingSignIn) {
             NavigationStack {
-                SignInView()
+                SignInView(isShowingInsideSignUpView: false)
                     .navigationTitle("Fazer login")
                     .navigationBarTitleDisplayMode(.inline)
             }
@@ -50,7 +50,7 @@ struct WelcomeView: View {
         }
         .sheet(isPresented: $welcomeVM.isShowingSignUp) {
             NavigationStack {
-                SignUpView()
+                SignUpView(isShowingInsideSignInView: false)
                     .navigationTitle("Criar conta")
                     .navigationBarTitleDisplayMode(.inline)
             }

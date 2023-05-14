@@ -22,13 +22,13 @@ struct UnsecureTextField: View {
             HStack {
                 TextField("", text: $text)
                     .padding(.horizontal, 18)
-                    .textContentType(.password)
+                    .textContentType(.emailAddress)
                     .textInputAutocapitalization(.never)
                     .autocorrectionDisabled()
                     .keyboardType(.default)
-                    .submitLabel(.join)
+                    .submitLabel(.continue)
             }
-            .frame(maxWidth: .infinity, maxHeight: 50)
+            .frame(maxWidth: .infinity, minHeight: 50)
             .background(Color("TextField"))
             .cornerRadius(15)
         }

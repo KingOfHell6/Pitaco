@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject private var firebase = FirebaseAuthService.shared
     var body: some View {
         NavigationStack {
-            WelcomeView()
+            if firebase.user != nil {
+                HomeView()
+            } else {
+                WelcomeView()
+            }
         }
     }
 }

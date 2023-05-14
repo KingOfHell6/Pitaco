@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3C10942329FF198C0098BE57 /* GrayBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C10942229FF198C0098BE57 /* GrayBlueButton.swift */; };
+		3C29CE382A06E9FF0042B811 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C29CE372A06E9FF0042B811 /* ProfileView.swift */; };
+		3C29CE412A08271A0042B811 /* SecureConfirmationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C29CE402A08271A0042B811 /* SecureConfirmationTextField.swift */; };
 		3C48A9D42A0027E8000995A7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3C48A9D32A0027E8000995A7 /* FirebaseAuth */; };
 		3C48A9D62A0027E8000995A7 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 3C48A9D52A0027E8000995A7 /* FirebasePerformance */; };
 		3C48A9D72A0028CE000995A7 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C10942D2A0024370098BE57 /* AdSupport.framework */; };
@@ -22,6 +24,7 @@
 		3C8B7F8429FF10CE008D49EE /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B7F8329FF10CE008D49EE /* WelcomeView.swift */; };
 		3C8B7F8629FF10DA008D49EE /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B7F8529FF10DA008D49EE /* WelcomeViewModel.swift */; };
 		3C8B7F9D29FF1600008D49EE /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B7F9C29FF1600008D49EE /* BlueButton.swift */; };
+		3C9EDC3E2A1190A30036E512 /* FirebaseImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9EDC3D2A1190A30036E512 /* FirebaseImageService.swift */; };
 		3CA2C5F82A003C6F001A9CAB /* OffBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2C5F72A003C6F001A9CAB /* OffBoxButton.swift */; };
 		3CA2C5FA2A006F20001A9CAB /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2C5F92A006F20001A9CAB /* FirebaseAuthService.swift */; };
 		3CBB5D272A0486D600D4B3B7 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB5D262A0486D600D4B3B7 /* SignUpViewModel.swift */; };
@@ -40,6 +43,10 @@
 		3C10942229FF198C0098BE57 /* GrayBlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayBlueButton.swift; sourceTree = "<group>"; };
 		3C10942629FF1FCC0098BE57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3C10942D2A0024370098BE57 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		3C29CE372A06E9FF0042B811 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3C29CE3E2A0701730042B811 /* CacheableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheableImage.swift; sourceTree = "<group>"; };
+		3C29CE3F2A0701780042B811 /* Image+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Data.swift"; sourceTree = "<group>"; };
+		3C29CE402A08271A0042B811 /* SecureConfirmationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureConfirmationTextField.swift; sourceTree = "<group>"; };
 		3C48A9DB2A002DB4000995A7 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		3C48A9DD2A002DF6000995A7 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		3C48A9DF2A002FA8000995A7 /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
@@ -52,6 +59,7 @@
 		3C8B7F8329FF10CE008D49EE /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		3C8B7F8529FF10DA008D49EE /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		3C8B7F9C29FF1600008D49EE /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
+		3C9EDC3D2A1190A30036E512 /* FirebaseImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseImageService.swift; sourceTree = "<group>"; };
 		3CA2C5F72A003C6F001A9CAB /* OffBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffBoxButton.swift; sourceTree = "<group>"; };
 		3CA2C5F92A006F20001A9CAB /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
 		3CBB5D262A0486D600D4B3B7 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
@@ -93,6 +101,54 @@
 				3C10942D2A0024370098BE57 /* AdSupport.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C29CE322A06E9630042B811 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3C29CE332A06E96A0042B811 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB5D292A048F6500D4B3B7 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C29CE342A06E9E60042B811 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3C29CE362A06E9F10042B811 /* View */,
+				3C29CE352A06E9EC0042B811 /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3C29CE352A06E9EC0042B811 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3C29CE362A06E9F10042B811 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C29CE372A06E9FF0042B811 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C29CE3D2A07016E0042B811 /* AsyncImage */ = {
+			isa = PBXGroup;
+			children = (
+				3C29CE3E2A0701730042B811 /* CacheableImage.swift */,
+				3C29CE3F2A0701780042B811 /* Image+Data.swift */,
+			);
+			path = AsyncImage;
 			sourceTree = "<group>";
 		};
 		3C48A9D82A002D77000995A7 /* View */ = {
@@ -163,6 +219,7 @@
 		3C8B7F7F29FF1094008D49EE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				3C29CE342A06E9E60042B811 /* Profile */,
 				3CBB5D282A048F4B00D4B3B7 /* Home */,
 				3CD23F2A2A01D7080083270B /* ProfilePhoto */,
 				3C8B7F8929FF113A008D49EE /* Aplication */,
@@ -211,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				3CA2C5F92A006F20001A9CAB /* FirebaseAuthService.swift */,
+				3C9EDC3D2A1190A30036E512 /* FirebaseImageService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -226,6 +284,7 @@
 		3C8B7F9A29FF15E7008D49EE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3C29CE3D2A07016E0042B811 /* AsyncImage */,
 				3CC574692A01640C006DD159 /* TextFields */,
 				3C8B7F9B29FF15ED008D49EE /* Buttons */,
 			);
@@ -247,7 +306,8 @@
 		3CBB5D282A048F4B00D4B3B7 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				3CBB5D292A048F6500D4B3B7 /* HomeView.swift */,
+				3C29CE332A06E96A0042B811 /* View */,
+				3C29CE322A06E9630042B811 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -257,6 +317,7 @@
 			children = (
 				3CD23F212A0167060083270B /* SecureTextField.swift */,
 				3CC5746A2A016424006DD159 /* UnsecureTextField.swift */,
+				3C29CE402A08271A0042B811 /* SecureConfirmationTextField.swift */,
 			);
 			path = TextFields;
 			sourceTree = "<group>";
@@ -427,6 +488,8 @@
 				3C8B7F9D29FF1600008D49EE /* BlueButton.swift in Sources */,
 				3CBB5D272A0486D600D4B3B7 /* SignUpViewModel.swift in Sources */,
 				3C10942329FF198C0098BE57 /* GrayBlueButton.swift in Sources */,
+				3C29CE412A08271A0042B811 /* SecureConfirmationTextField.swift in Sources */,
+				3C9EDC3E2A1190A30036E512 /* FirebaseImageService.swift in Sources */,
 				3CD23F222A0167060083270B /* SecureTextField.swift in Sources */,
 				3CD23F2F2A01D89E0083270B /* TransferError.swift in Sources */,
 				3C48A9DE2A002DF6000995A7 /* SignInViewModel.swift in Sources */,
@@ -435,6 +498,7 @@
 				3C48A9E02A002FA8000995A7 /* WhiteButton.swift in Sources */,
 				3CBB5D2A2A048F6500D4B3B7 /* HomeView.swift in Sources */,
 				3C48A9E22A003934000995A7 /* GrayButton.swift in Sources */,
+				3C29CE382A06E9FF0042B811 /* ProfileView.swift in Sources */,
 				3CA2C5F82A003C6F001A9CAB /* OffBoxButton.swift in Sources */,
 				3CA2C5FA2A006F20001A9CAB /* FirebaseAuthService.swift in Sources */,
 				3C8B7F7229FF105A008D49EE /* PitacoApp.swift in Sources */,

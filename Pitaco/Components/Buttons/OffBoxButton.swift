@@ -17,7 +17,7 @@ struct OffBoxButton: View {
                 action()
             } label: {
                 Text(label)
-                    .frame(maxWidth: .infinity, maxHeight: 50)
+                    .frame(maxWidth: .infinity, minHeight: 50)
                     .foregroundColor(.blue)
                     .font(.system(size: 17, weight: .bold))
                     .background(.clear)
