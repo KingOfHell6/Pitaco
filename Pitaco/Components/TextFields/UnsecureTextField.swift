@@ -23,9 +23,7 @@ struct UnsecureTextField: View {
                 TextField("", text: $text)
                     .padding(.horizontal, 18)
                     .textContentType(.emailAddress)
-                    .textInputAutocapitalization(.never)
-                    .autocorrectionDisabled()
-                    .keyboardType(.default)
+                    .keyboardType(.emailAddress)
                     .submitLabel(.continue)
             }
             .frame(maxWidth: .infinity, minHeight: 50)

@@ -5,7 +5,6 @@
 //  Created by Matheus Araújo on 14/05/23.
 //
 
-
 import FirebaseAuth
 import FirebaseStorage
 import Foundation

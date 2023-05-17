@@ -27,7 +27,7 @@ struct SecureTextField: View {
                         .textContentType(.password)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled()
-                        .keyboardType(.emailAddress)
+                        .keyboardType(.default)
                         .opacity(isShowingPassword ? 1 : 0)
 
                     SecureField("", text: $text)
@@ -35,7 +35,7 @@ struct SecureTextField: View {
                         .textContentType(.password)
                         .textInputAutocapitalization(.never)
                         .autocorrectionDisabled()
-                        .keyboardType(.emailAddress)
+                        .keyboardType(.default)
                         .opacity(isShowingPassword ? 0 : 1)
                 }
                 .frame(maxWidth: .infinity, minHeight: 50)
