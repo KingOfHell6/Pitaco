@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SecureConfirmationTextField: View {
+struct ConfirmPasswordSecureField: View {
     @Binding var text: String
     @Binding var isShowingPassword: Bool
     @Binding var isPasswordsEquals: Bool
@@ -17,7 +17,7 @@ struct SecureConfirmationTextField: View {
         VStack {
             Text("Confirme sua senha")
                 .frame(maxWidth: .infinity, maxHeight: 22, alignment: .leading)
-                .offset(x: +18)
+                .padding(.leading, 18)
                 .font(.system(size: 17, weight: .bold))
                 .foregroundColor(Color("TextFieldLabel"))
 

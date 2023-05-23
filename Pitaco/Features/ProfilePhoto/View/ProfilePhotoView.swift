@@ -52,7 +52,7 @@ struct ProfilePhotoView: View {
     }
 }
 
-struct TesteView_Previews: PreviewProvider {
+struct ProfilePhotoView_Previews: PreviewProvider {
     static var previews: some View {
         ProfilePhotoView(profilePhotoVM: ProfilePhotoViewModel())
     }

@@ -75,6 +75,8 @@ class FirebaseAuthService: ObservableObject {
                     }
                 }
             }
+
+            self.realodUser()
         }
     }
     
@@ -85,5 +87,9 @@ class FirebaseAuthService: ObservableObject {
         } catch {
             self.error = error
         }
+    }
+
+    func realodUser() {
+        Auth.auth().currentUser?.reload()
     }
 }

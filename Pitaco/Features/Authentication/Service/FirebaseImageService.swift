@@ -14,7 +14,7 @@ class FirebaseImageService {
     static let shared = FirebaseImageService()
 
     func uploadProfileImage(_ image: UIImage, completion: @escaping (Result<URL, Error>) -> Void) {
-        guard let imageData = image.jpegData(compressionQuality: 0.8) else {
+        guard let imageData = image.jpegData(compressionQuality: 1.0) else {
             completion(.failure("Erro ao converter UIImage para Data" as! Error))
             return
         }

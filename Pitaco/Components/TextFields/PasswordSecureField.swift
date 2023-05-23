@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SecureTextField: View {
+struct PasswordSecureField: View {
     @Binding var text: String
     @Binding var isShowingPassword: Bool
     var title: String
@@ -16,7 +16,7 @@ struct SecureTextField: View {
         VStack {
             Text(title)
                 .frame(maxWidth: .infinity, maxHeight: 22, alignment: .leading)
-                .offset(x: +18)
+                .padding(.leading, 18)
                 .font(.system(size: 17, weight: .bold))
                 .foregroundColor(Color("TextFieldLabel"))
             

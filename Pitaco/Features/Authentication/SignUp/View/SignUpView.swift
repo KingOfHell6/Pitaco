@@ -20,13 +20,13 @@ struct SignUpView: View {
             VStack(spacing: 24) {
                 ProfilePhotoView(profilePhotoVM: profilePhotoVM)
 
-                UnsecureTextField(text: $signUpVM.userName, title: "Nome")
+                NormalTextField(text: $signUpVM.userName, title: "Nome")
 
-                UnsecureTextField(text: $signUpVM.email, title: "E-mail")
+                EmailTextField(text: $signUpVM.email, title: "E-mail")
 
-                SecureTextField(text: $signUpVM.password, isShowingPassword: $signUpVM.isShowingPassword, title: "Senha")
+                PasswordSecureField(text: $signUpVM.password, isShowingPassword: $signUpVM.isShowingPassword, title: "Senha")
 
-                SecureConfirmationTextField(
+                ConfirmPasswordSecureField(
                     text: $signUpVM.confirmationPassword,
                     isShowingPassword: $signUpVM.isShowingPassword,
                     isPasswordsEquals: $signUpVM.isPasswordsEquals,

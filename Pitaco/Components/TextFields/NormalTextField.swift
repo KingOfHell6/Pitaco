@@ -1,13 +1,13 @@
 //
-//  UnsecureTextField.swift
+//  TextField.swift
 //  Pitaco
 //
-//  Created by Matheus Araújo on 02/05/23.
+//  Created by Matheus Araújo on 19/05/23.
 //
 
 import SwiftUI
 
-struct UnsecureTextField: View {
+struct NormalTextField: View {
     @Binding var text: String
     var title: String
 
@@ -15,15 +15,15 @@ struct UnsecureTextField: View {
         VStack {
             Text(title)
                 .frame(maxWidth: .infinity, maxHeight: 22, alignment: .leading)
-                .offset(x: +18, y: +6)
+                .padding(.leading, 18)
                 .font(.system(size: 17, weight: .bold))
                 .foregroundColor(Color("TextFieldLabel"))
 
             HStack {
                 TextField("", text: $text)
                     .padding(.horizontal, 18)
-                    .textContentType(.emailAddress)
-                    .keyboardType(.emailAddress)
+                    .textContentType(.name)
+                    .keyboardType(.default)
                     .submitLabel(.continue)
             }
             .frame(maxWidth: .infinity, minHeight: 50)

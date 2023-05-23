@@ -17,9 +17,9 @@ struct SignInView: View {
 
     var body: some View {
         VStack(spacing: 24) {
-            UnsecureTextField(text: $signInVM.email, title: "E-mail")
+            EmailTextField(text: $signInVM.email, title: "E-mail")
 
-            SecureTextField(text: $signInVM.password, isShowingPassword: $signInVM.isShowingPassword, title: "Senha")
+            PasswordSecureField(text: $signInVM.password, isShowingPassword: $signInVM.isShowingPassword, title: "Senha")
 
             Text(authService.error?.localizedDescription ?? "")
                 .frame(maxWidth: .infinity, minHeight: 40, maxHeight: 80, alignment: .center)

@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @ObservedObject private var firebaseAuthService = FirebaseAuthService.shared
+    
     var body: some View {
         VStack {
             AsyncImage(
-                url: FirebaseAuthService.shared.user?.photoURL,
+                url: firebaseAuthService.user?.photoURL,
                 content: { image in
                     image.resizable()
                         .scaledToFill()
@@ -32,12 +34,12 @@ struct ProfileView: View {
                 }
             )
             
-            Text(FirebaseAuthService.shared.user?.displayName ?? "")
+            Text(firebaseAuthService.user?.displayName ?? "")
                 .font(.system(size: 17, weight: .semibold))
                 .fontWeight(.bold)
                 .padding(.top, 10)
         }
-        .toolbar{
+        .toolbar {
             ToolbarItem {
                 Button {
                     FirebaseAuthService.shared.signOut()
@@ -46,6 +48,9 @@ struct ProfileView: View {
                         .symbolRenderingMode(.multicolor)
                 }
             }
+        }
+        .onAppear {
+            FirebaseAuthService.shared.realodUser()
         }
     }
 }
