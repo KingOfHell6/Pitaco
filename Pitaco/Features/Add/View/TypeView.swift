@@ -34,16 +34,20 @@ struct TypeView: View {
                 FormView(addVM: addVM, isShowingAddView: $isShowingAddView)
             } label: {
                 Text("Continuar")
-                    .frame(maxWidth: .infinity, minHeight: 40)
+                    .frame(maxWidth: .infinity, minHeight: 50)
+                    .foregroundColor(addVM.type == .other ? Color("DisabledText") : .white)
                     .font(.system(size: 17, weight: .bold))
+                    .background(addVM.type == .other ? Color("DisabledButton") : Color("BlueButton"))
+                    .cornerRadius(15)
             }
-            .padding(.top, 91)
             .padding(.horizontal, 20)
-            .buttonStyle(.borderedProminent)
-            .tint(Color("BlueButton"))
-            .cornerRadius(15)
+            .buttonStyle(.borderless)
             .disabled(addVM.type == .other ? true : false)
+
         }
+        .navigationTitle("Adicionar pitaco")
+        .navigationBarTitleDisplayMode(.inline)
+        .padding(.bottom, 20)
     }
 }
 

@@ -39,16 +39,6 @@ struct ProfileView: View {
                 .fontWeight(.bold)
                 .padding(.top, 10)
         }
-        .toolbar {
-            ToolbarItem {
-                Button {
-                    FirebaseAuthService.shared.signOut()
-                } label: {
-                    Image(systemName: "figure.walk.motion")
-                        .symbolRenderingMode(.multicolor)
-                }
-            }
-        }
         .onAppear {
             FirebaseAuthService.shared.realodUser()
         }

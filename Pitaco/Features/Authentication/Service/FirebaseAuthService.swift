@@ -26,6 +26,8 @@ class FirebaseAuthService: ObservableObject {
             
             if let user = user {
                 self?.user = user
+            } else {
+                self?.user = nil
             }
         }
     }

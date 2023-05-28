@@ -11,24 +11,17 @@ struct HomeView: View {
     @ObservedObject private var homeVM = HomeViewModel()
 
     var body: some View {
-        NavigationStack {
+        VStack {
             ScrollView {
-                VStack {
-                    VStack {
-                        ForEach(homeVM.pitacos.indices, id: \.self) { index in
-                            pitaco(pitaco: homeVM.pitacos[index])
-                        }
+                ForEach(homeVM.pitacos.indices, id: \.self) { index in
+                    NavigationLink {
+                        Text("Putinha barata")
+                    } label: {
+                        CellView(pitaco: homeVM.pitacos[index])
+                            .padding(.horizontal, 20)
                     }
+
                 }
-            }
-            .onAppear {
-                homeVM.getPitacos()
-            }
-            .refreshable {
-                homeVM.getPitacos()
-            }
-            .sheet(isPresented: $homeVM.isShowingAdd) {
-                AddView(isShowingAddView: $homeVM.isShowingAdd)
             }
 
             BlueButton(action: {
@@ -36,39 +29,15 @@ struct HomeView: View {
             }, label: "Adicionar um pitaco")
             .padding(.horizontal, 20)
         }
-    }
-
-    @ViewBuilder
-    func pitaco(pitaco: Pitaco) -> some View {
-        VStack {
-            HStack {
-                AsyncImage(url: URL(string: "https://www.themoviedb.org/t/p/w1066_and_h600_bestv2/cJYLon9ejKJV7ua03ab8Tj9u067.jpg")) { image in
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                } placeholder: {
-                    ProgressView()
-                }
-                .frame(width: 107, height: 80)
-                .background(.red)
-
-                VStack(alignment: .leading) {
-                    Text(pitaco.title)
-                    Text(pitaco.genre)
-                }
-                .frame(maxWidth: .infinity)
-
-                Spacer()
-                Spacer()
-
-                Image(systemName: "chevron.right")
-
-                Spacer()
-            }
+        .onAppear {
+            homeVM.getPitacos()
         }
-        .background(.gray)
-        .cornerRadius(20)
-        .padding(.horizontal, 10)
+        .refreshable {
+            homeVM.getPitacos()
+        }
+        .sheet(isPresented: $homeVM.isShowingAdd) {
+            AddView(isShowingAddView: $homeVM.isShowingAdd)
+        }
     }
 }
 

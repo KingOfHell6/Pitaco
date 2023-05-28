@@ -17,7 +17,7 @@ struct TypeCardView: View {
             Button {
                 selected = selected == type ? .other : type
             } label: {
-                Image(systemName: type == selected ? "checkmark.circle" : "circle")
+                Image(systemName: type == selected ? "circle.fill" : "circle")
                     .font(.system(size: 24))
                     .padding(.horizontal, 37)
                     .foregroundColor(Color.primary)
@@ -31,7 +31,7 @@ struct TypeCardView: View {
         .frame(maxWidth: .infinity, minHeight: 171)
         .background(
             RoundedRectangle(cornerRadius: 15, style: .continuous)
-                .fill(Color("TypeCard"))
+                .fill(type == selected ? .blue : Color("TypeCard"))
                 .onTapGesture {
                     selected = selected == type ? .other : type
                 }

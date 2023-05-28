@@ -21,6 +21,12 @@ struct FormView: View {
                 }
 
                 Section {
+                    RatingView(rating: $addVM.rating)
+                } header: {
+                    Text(addVM.type == .movie ? "Nota do filme" : "Nota da série")
+                }
+
+                Section {
                     Picker("Gênero", selection: $addVM.genre) {
                         ForEach(PitacoGenre.allCases, id: \.self) {
                             Text($0.rawValue).tag($0)
@@ -41,21 +47,15 @@ struct FormView: View {
                 }
 
                 Section {
-                    TextEditor(text: $addVM.pitaco)
-                } header: {
-                    Text(addVM.type == .movie ? "Review do filme" : "Review da série")
-                }
-
-                Section {
-                    RatingView(rating: $addVM.rating)
-                } header: {
-                    Text(addVM.type == .movie ? "Nota do filme" : "Nota da série")
-                }
-
-                Section {
                     Toggle("Público", isOn: $addVM.isPublic)
                 } header: {
                     Text("Compartilhar seu pitaco com a comunidade?")
+                }
+
+                Section {
+                    TextEditor(text: $addVM.pitaco)
+                } header: {
+                    Text(addVM.type == .movie ? "Review do filme" : "Review da série")
                 }
             }
 
@@ -85,6 +85,8 @@ struct FormView: View {
 //                || addVM.rating == 0 ? true : false
 //            )
         }
+        .navigationTitle("Adicionar pitaco")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

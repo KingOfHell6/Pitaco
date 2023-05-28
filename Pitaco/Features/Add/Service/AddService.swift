@@ -56,7 +56,6 @@ class AddService: ObservableObject {
 
         let firestore = getFirestoreReference()
 
-        // Adiciona um listener para receber atualizações em tempo real na subcoleção "pitacos" do usuário atual
         firestore.collection("users").document(userID).collection("pitacos").addSnapshotListener { (querySnapshot, error) in
             if let error = error {
                 print("Erro ao recuperar os pitacos: \(error)")
@@ -67,12 +66,12 @@ class AddService: ObservableObject {
             var pitacos: [Pitaco] = []
 
             for document in querySnapshot!.documents {
-                // Decodifica o documento em uma instância de Pitaco
-                guard let pitacoData = document.data() as? [String: Any],
-                      let jsonData = try? JSONSerialization.data(withJSONObject: pitacoData),
-                      let pitaco = try? JSONDecoder().decode(Pitaco.self, from: jsonData) else {
-                    continue
-                }
+                let pitacoData = document.data() as [String: Any]
+
+                guard let jsonData = try? JSONSerialization.data(withJSONObject: pitacoData) else { return }
+
+                guard let pitaco = try? JSONDecoder().decode(Pitaco.self, from: jsonData) else { continue }
+
                 pitacos.append(pitaco)
             }
 

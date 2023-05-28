@@ -12,7 +12,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             if firebase.user != nil {
-                HomeView()
+                MainTabView()
             } else {
                 WelcomeView()
             }

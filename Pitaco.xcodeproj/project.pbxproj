@@ -40,6 +40,8 @@
 		3C8B7F8629FF10DA008D49EE /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B7F8529FF10DA008D49EE /* WelcomeViewModel.swift */; };
 		3C8B7F9D29FF1600008D49EE /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8B7F9C29FF1600008D49EE /* BlueButton.swift */; };
 		3C9175212A181B9E0098D0F3 /* NormalTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9175202A181B9E0098D0F3 /* NormalTextField.swift */; };
+		3C9BD90D2A1E913E00B110CD /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BD90C2A1E913E00B110CD /* TabView.swift */; };
+		3C9BD9152A1EAF9000B110CD /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9BD9142A1EAF9000B110CD /* CellView.swift */; };
 		3C9EDC3E2A1190A30036E512 /* FirebaseImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9EDC3D2A1190A30036E512 /* FirebaseImageService.swift */; };
 		3CA2C5F82A003C6F001A9CAB /* OffBoxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2C5F72A003C6F001A9CAB /* OffBoxButton.swift */; };
 		3CA2C5FA2A006F20001A9CAB /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2C5F92A006F20001A9CAB /* FirebaseAuthService.swift */; };
@@ -87,6 +89,8 @@
 		3C8B7F8529FF10DA008D49EE /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
 		3C8B7F9C29FF1600008D49EE /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
 		3C9175202A181B9E0098D0F3 /* NormalTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalTextField.swift; sourceTree = "<group>"; };
+		3C9BD90C2A1E913E00B110CD /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabView.swift; path = Pitaco/Features/TabView/View/TabView.swift; sourceTree = SOURCE_ROOT; };
+		3C9BD9142A1EAF9000B110CD /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		3C9EDC3D2A1190A30036E512 /* FirebaseImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseImageService.swift; sourceTree = "<group>"; };
 		3CA2C5F72A003C6F001A9CAB /* OffBoxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffBoxButton.swift; sourceTree = "<group>"; };
 		3CA2C5F92A006F20001A9CAB /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 		3C4EA1842A1D5BDA006F084F /* TabView */ = {
 			isa = PBXGroup;
 			children = (
+				3C9BD90B2A1E913500B110CD /* View */,
 			);
 			path = TabView;
 			sourceTree = "<group>";
@@ -307,6 +312,8 @@
 			children = (
 				3C9EDC3F2A1197280036E512 /* Add */,
 				3C8B7F8729FF1106008D49EE /* Authentication */,
+				3C9BD9112A1EAF7C00B110CD /* Cell */,
+				3C9BD90E2A1EAF6100B110CD /* Detail */,
 				3CBB5D282A048F4B00D4B3B7 /* Home */,
 				3C8B7F8929FF113A008D49EE /* Main */,
 				3C29CE342A06E9E60042B811 /* Profile */,
@@ -391,6 +398,54 @@
 				3C48A9DF2A002FA8000995A7 /* WhiteButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		3C9BD90B2A1E913500B110CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C9BD90C2A1E913E00B110CD /* TabView.swift */,
+			);
+			name = View;
+			path = Pitaco/Features/TabView/View;
+			sourceTree = "<group>";
+		};
+		3C9BD90E2A1EAF6100B110CD /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3C9BD9102A1EAF7600B110CD /* ViewModel */,
+				3C9BD90F2A1EAF6B00B110CD /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		3C9BD90F2A1EAF6B00B110CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C9BD9102A1EAF7600B110CD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3C9BD9112A1EAF7C00B110CD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3C9BD9122A1EAF8200B110CD /* View */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3C9BD9122A1EAF8200B110CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C9BD9142A1EAF9000B110CD /* CellView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		3C9EDC3F2A1197280036E512 /* Add */ = {
@@ -614,6 +669,7 @@
 				3CCF92F72A15872400043AFD /* ProfilePhotoViewModel.swift in Sources */,
 				3C48A9DE2A002DF6000995A7 /* SignInViewModel.swift in Sources */,
 				3C8B7F8629FF10DA008D49EE /* WelcomeViewModel.swift in Sources */,
+				3C9BD9152A1EAF9000B110CD /* CellView.swift in Sources */,
 				3C8B7F8429FF10CE008D49EE /* WelcomeView.swift in Sources */,
 				3C48A9E02A002FA8000995A7 /* WhiteButton.swift in Sources */,
 				3C4EA18E2A1D725B006F084F /* TypeCardView.swift in Sources */,
@@ -629,6 +685,7 @@
 				3C1B01132A119BEE003EB204 /* FormView.swift in Sources */,
 				3C8B7F7229FF105A008D49EE /* PitacoApp.swift in Sources */,
 				3CD23F332A01DF520083270B /* SignUpView.swift in Sources */,
+				3C9BD90D2A1E913E00B110CD /* TabView.swift in Sources */,
 				3CC5746B2A016424006DD159 /* EmailTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
